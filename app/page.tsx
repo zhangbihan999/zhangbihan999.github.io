@@ -49,18 +49,17 @@ export default function Home() {
           <div className={'h-16'}></div>
 
           <div>
-            <Paragraph>Hey, I&apos;m <Bold>Zhang Chen. </Bold> I&apos;m currently doing research
+            <Paragraph>Hey, I&apos;m <Bold>Zhang Chen. </Bold> I&apos;m currently studying
               at <UrlLink
-                url={"https://ics.nju.edu.cn/"}>ICS</UrlLink> of <UrlLink
-                  url={"https://www.nju.edu.cn/index.htm"}>Sichuan University</UrlLink> for my master degree.
-              I&apos;m interested in <Bold>Software Engineering</Bold> and enjoying coding via
-              C++/Java/Go/Rust.</Paragraph>
+                url={"https://sw.scu.edu.cn/"}>CSE</UrlLink> of <UrlLink
+                  url={"https://www.scu.edu.cn/index.htm"}>Sichuan University</UrlLink> for my bachelor's degree.
+              I&apos;m interested in <Bold>AI Syetem</Bold> and enjoying coding.</Paragraph>
 
             <br />
 
-            <Paragraph>Mail me at <UrlLink url={"zhaoqi.tong@outlook.com"}
+            <Paragraph>Mail me at <UrlLink url={"zhangbihan999@gmail.com"}
               bold={false}>zhangbihan999@gmail.com</UrlLink> or <UrlLink
-                url={"tzq0301@gmail.com"} bold={false}>2577915811@qq.com</UrlLink></Paragraph>
+                url={"2577915811@qq.com"} bold={false}>2577915811@qq.com</UrlLink></Paragraph>
 
             <div className={'h-3'}></div>
 
@@ -69,8 +68,7 @@ export default function Home() {
                 <InlineIcon src={"/icon/github.svg"} text={"GitHub"} />
               </UrlLink>
               &nbsp;&nbsp;
-              {/* 这个地址要改 */}
-              <UrlLink url={'https://blog.csdn.net/m0_46261993'} bold={false}>
+              <UrlLink url={'https://blog.csdn.net/m0_73615873'} bold={false}>
                 <InlineIcon src={"/icon/csdn.svg"} text={"CSDN"} />
               </UrlLink>
             </Paragraph>
@@ -87,31 +85,6 @@ export default function Home() {
               <TableRow
                 left={
                   <div>
-                    <Bold>Master</Bold>
-                  </div>
-                }
-                right={
-                  <div>
-                    <div>
-                      <UrlLink url={'https://www.nju.edu.cn/index.htm'}>Sichuan
-                        University</UrlLink>,&nbsp;
-                      <UrlLink url={'https://cs.nju.edu.cn/main.htm'} bold={false}>Computer Science
-                        Department</UrlLink>,&nbsp;
-                      <UrlLink url={'https://ics.nju.edu.cn/'} bold={false}>Institute of Computer
-                        Software</UrlLink>&nbsp;(in Chinese: 南京大学计算机系软件研究所)
-                    </div>
-                    <br />
-                    <div>Advisor: <UrlLink url={'https://yiqinnju.github.io/'} bold={false}>Prof. Yi
-                      Qin</UrlLink>,&nbsp;<UrlLink
-                        url={'https://ics.nju.edu.cn/people/xiaoxingma/index.html'} bold={false}>Prof.
-                        Xiaoxing Ma</UrlLink></div>
-                    <br />
-                    2023.9 ~ now
-                  </div>
-                } />
-              <TableRow
-                left={
-                  <div>
                     <Bold>B.S.</Bold>
                   </div>
                 }
@@ -123,7 +96,7 @@ export default function Home() {
                         Engineering</UrlLink>&nbsp;(in Chinese: 四川大学软件学院)
                     </div>
                     <br />
-                    2019.9 ~ 2023.6
+                    2022.9 ~ now
                   </div>
                 } />
             </Table>
