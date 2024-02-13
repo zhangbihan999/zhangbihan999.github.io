@@ -52,7 +52,7 @@ export default function Home() {
             <Paragraph>Hey, I&apos;m <Bold>Zhang Chen. </Bold> I&apos;m currently studying
               at <UrlLink
                 url={"https://sw.scu.edu.cn/"}>CSE</UrlLink> of <UrlLink
-                  url={"https://www.scu.edu.cn/index.htm"}>Sichuan University</UrlLink> for my bachelor&nbsp;s degree.
+                  url={"https://www.scu.edu.cn/index.htm"}>Sichuan University</UrlLink> for my B.S.
               I&apos;m interested in <Bold>AI Syetem</Bold> and enjoying coding.</Paragraph>
 
             <br />
