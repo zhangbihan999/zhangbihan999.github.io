@@ -1,113 +1,141 @@
-import Image from "next/image";
+import UrlLink from './components/UrlLink';
+import Separator from './components/Separator';
+import Paragraph from './components/Paragraph';
+import Bold from './components/Bold';
+import InlineIcon from './components/InlineIcon';
+import Table from './components/table/Table';
+import TableRow from './components/table/TableRow';
+
+import './page.css';
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
+    <div className={"font-serif flex justify-center items-center bg-zinc-50"}>
+      <div className={"w-1/2"} id={'content-container'}>
+        <div className={"h-24"}></div>
+
+          <div>
+            <div className={'text-center text-4xl'}>Zhang Chen</div>
+
+            <div className={'h-4'}></div>
+
+            <div className={'text-center text-slate-600 text-xs italic'}>Undergraduate @ Sichuan University</div>
+          </div>
+
+          <div className={'h-16'}></div>
+
+          <div className={'flex flex-col items-center'}>
+            <div>
+              <UrlLink url={'#education'} native={true} underline={false} fontSize={'text-sm'}>Education</UrlLink>
+              <Separator />
+              <UrlLink url={'#work experience'} native={true} underline={false} fontSize={'text-sm'}>Work Experience</UrlLink>
+              <Separator />
+              <UrlLink url={'#open-sources'} native={true} underline={false} fontSize={'text-sm'}>Open Sources</UrlLink>
+              <Separator />
+              <br />
+              <div>
+                <UrlLink url={'#researches'} native={true} underline={false} fontSize={'text-sm'}>Researches</UrlLink>
+                <Separator />
+                <UrlLink url={'#blogs'} native={true} underline={false} fontSize={'text-sm'}>Blogs</UrlLink>
+                <Separator />
+                <UrlLink url={'#projects'} native={true} underline={false} fontSize={'text-sm'}>Projects</UrlLink>
+                <Separator />
+                <UrlLink url={'#honors-awards'} native={true} underline={false} fontSize={'text-sm'}>Honors & awards</UrlLink>
+                <Separator />
+              </div>
+            </div>
+          </div>
+
+          <div className={'h-16'}></div>
+
+          <div>
+            <Paragraph>Hey, I&apos;m <Bold>Zhang Chen. </Bold> I&apos;m currently doing research
+              at <UrlLink
+                url={"https://ics.nju.edu.cn/"}>ICS</UrlLink> of <UrlLink
+                  url={"https://www.nju.edu.cn/index.htm"}>Sichuan University</UrlLink> for my master degree.
+              I&apos;m interested in <Bold>Software Engineering</Bold> and enjoying coding via
+              C++/Java/Go/Rust.</Paragraph>
+
+            <br />
+
+            <Paragraph>Mail me at <UrlLink url={"zhaoqi.tong@outlook.com"}
+              bold={false}>zhangbihan999@gmail.com</UrlLink> or <UrlLink
+                url={"tzq0301@gmail.com"} bold={false}>2577915811@qq.com</UrlLink></Paragraph>
+
+            <div className={'h-3'}></div>
+
+            <Paragraph>
+              <UrlLink url={'https://github.com/zhangbihan999'} bold={false}>
+                <InlineIcon src={"/icon/github.svg"} text={"GitHub"} />
+              </UrlLink>
+              &nbsp;&nbsp;
+              {/* 这个地址要改 */}
+              <UrlLink url={'https://blog.csdn.net/m0_46261993'} bold={false}>
+                <InlineIcon src={"/icon/csdn.svg"} text={"CSDN"} />
+              </UrlLink>
+            </Paragraph>
+          </div>
+
+          <div className={'h-14'}></div>
+
+          <div id={'education'}>
+            <div className={'text-2xl'}>Education</div>
+            <br />
+            <br />
+
+            <Table>
+              <TableRow
+                left={
+                  <div>
+                    <Bold>Master</Bold>
+                  </div>
+                }
+                right={
+                  <div>
+                    <div>
+                      <UrlLink url={'https://www.nju.edu.cn/index.htm'}>Sichuan
+                        University</UrlLink>,&nbsp;
+                      <UrlLink url={'https://cs.nju.edu.cn/main.htm'} bold={false}>Computer Science
+                        Department</UrlLink>,&nbsp;
+                      <UrlLink url={'https://ics.nju.edu.cn/'} bold={false}>Institute of Computer
+                        Software</UrlLink>&nbsp;(in Chinese: 南京大学计算机系软件研究所)
+                    </div>
+                    <br />
+                    <div>Advisor: <UrlLink url={'https://yiqinnju.github.io/'} bold={false}>Prof. Yi
+                      Qin</UrlLink>,&nbsp;<UrlLink
+                        url={'https://ics.nju.edu.cn/people/xiaoxingma/index.html'} bold={false}>Prof.
+                        Xiaoxing Ma</UrlLink></div>
+                    <br />
+                    2023.9 ~ now
+                  </div>
+                } />
+              <TableRow
+                left={
+                  <div>
+                    <Bold>B.S.</Bold>
+                  </div>
+                }
+                right={
+                  <div>
+                    <div>
+                      <UrlLink url={'https://scu.edu.cn/'}>Sichuan University</UrlLink>,&nbsp;
+                      <UrlLink url={'https://sw.scu.edu.cn/'} bold={false}>Collage of Software
+                        Engineering</UrlLink>&nbsp;(in Chinese: 四川大学软件学院)
+                    </div>
+                    <br />
+                    2019.9 ~ 2023.6
+                  </div>
+                } />
+            </Table>
+          </div>
+
+          <div className={'h-14'}></div>
+
+        
       </div>
+    </div>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+  )
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  );
 }
