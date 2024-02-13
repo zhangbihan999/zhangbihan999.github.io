@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: "Zhang Chen",
   description: "Zhang Chen\'s index page",
   icons:{
-    icon: './icon/favicon.ico'
+    icon: '/icon/favicon.ico'
   }
 };
 
