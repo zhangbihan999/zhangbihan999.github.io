@@ -53,7 +53,7 @@ export default function Home() {
               at <UrlLink
                 url={"https://sw.scu.edu.cn/"}>CSE</UrlLink> of <UrlLink
                   url={"https://www.scu.edu.cn/index.htm"}>Sichuan University</UrlLink> for my B.S.
-              I&apos;m interested in <Bold>AI Syetem</Bold> and enjoying coding.</Paragraph>
+              I&apos;m interested in <Bold>AI System</Bold> and enjoying coding.</Paragraph>
 
             <br />
 
@@ -92,7 +92,7 @@ export default function Home() {
                   <div>
                     <div>
                       <UrlLink url={'https://scu.edu.cn/'}>Sichuan University</UrlLink>,&nbsp;
-                      <UrlLink url={'https://sw.scu.edu.cn/'} bold={false}>Collage of Software
+                      <UrlLink url={'https://sw.scu.edu.cn/'} bold={false}>College of Software
                         Engineering</UrlLink>&nbsp;(in Chinese: 四川大学软件学院)
                     </div>
                     <br />
