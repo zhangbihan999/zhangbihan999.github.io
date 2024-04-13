@@ -112,7 +112,7 @@ export default function Home() {
             <TableRow
               left={
                 <div>
-                  <Bold>IDs Lab | SCU</Bold>&nbsp;(Intern)
+                  <Bold>IDs Lab | SCU</Bold>
                 </div>
               }
               right={
