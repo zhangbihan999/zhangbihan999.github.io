@@ -5,10 +5,10 @@ import Bold from './components/Bold';
 import InlineIcon from './components/InlineIcon';
 import Table from './components/table/Table';
 import TableRow from './components/table/TableRow';
-
-import './page.css';
 import List from './components/list/List';
 import ListItem from './components/list/ListItem';
+
+import './page.css';
 
 export default function Home() {
   return (
@@ -36,9 +36,9 @@ export default function Home() {
               <Separator /> */}
             {/* <UrlLink url={'#researches'} native={true} underline={false} fontSize={'text-sm'}>Researches</UrlLink>
                 <Separator /> */}
-            <UrlLink url={'#blogs'} native={true} underline={false} fontSize={'text-sm'}>Blogs</UrlLink>
+            <UrlLink url={'#work-experience'} native={true} underline={false} fontSize={'text-sm'}>Work Experience</UrlLink>
             <Separator />
-            <UrlLink url={'#self-learning'} native={true} underline={false} fontSize={'text-sm'}>Self Learning</UrlLink>
+            <UrlLink url={'#blogs'} native={true} underline={false} fontSize={'text-sm'}>Blogs</UrlLink>
 
             {/* <UrlLink url={'#honors-awards'} native={true} underline={false} fontSize={'text-sm'}>Honors & awards</UrlLink>
                 <Separator /> */}
@@ -104,6 +104,32 @@ export default function Home() {
 
         <div className={'h-14'}></div>
 
+        <div id='work-experience'>
+          <div className={'text-2xl'}>Work Experience</div>
+          <br />
+          <br />
+          <Table>
+            <TableRow
+              left={
+                <div>
+                  <Bold>IDs Lab | SCU</Bold>&nbsp;(Intern)
+                </div>
+              }
+              right={
+                <div>
+                  <div>
+                    <UrlLink url={'https://ids-lab-asia.github.io/'}>Ids Lab | SCU</UrlLink>,&nbsp;
+                    <UrlLink url={'https://merlintang.github.io/'} bold={false}>Prof.Mingjie Tang</UrlLink>,&nbsp;Chengdu (China)
+                  </div>
+                  <br />
+                  2023.11 ~ now
+                </div>
+              } />
+          </Table>
+        </div>
+
+        <div className={'h-14'}></div>
+
         <div id={'blogs'}>
           <div className={'text-2xl'}>Blogs <text className={'text-base'}>(selected)</text></div>
           <br />
@@ -114,11 +140,6 @@ export default function Home() {
           </List>
         </div>
 
-        <div className={'h-14'}></div>
-
-        <div id='self-learning'>
-          <div className={'text-2xl'}>Self Learning</div>
-        </div>
       </div>
     </div>
 
