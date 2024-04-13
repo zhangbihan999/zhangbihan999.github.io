@@ -135,6 +135,8 @@ export default function Home() {
           <br />
           <br />
           <List>
+            <ListItem left={'Jan 2024'} right={<UrlLink url={'https://blog.csdn.net/m0_73615873/article/details/135943523?spm=1001.2014.3001.5501'}
+              bold={false}>mini版语言模型，逐行精讲</UrlLink>} />
             <ListItem left={'Jan 2024'} right={<UrlLink url={'https://blog.csdn.net/m0_73615873/article/details/135905512?spm=1001.2014.3001.5502'}
               bold={false}>为什么现在的LLM都是decoder-only架构?</UrlLink>} />
           </List>
