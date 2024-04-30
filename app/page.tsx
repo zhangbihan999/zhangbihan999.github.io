@@ -17,7 +17,7 @@ export default function Home() {
         <div className={"h-24"}></div>
 
         <div>
-          <div className={'text-center text-4xl'}>Zhang Chen</div>
+          <div className={'text-center text-4xl'}>Chen Zhang</div>
 
           <div className={'h-4'}></div>
 
@@ -49,7 +49,7 @@ export default function Home() {
         <div className={'h-16'}></div>
 
         <div>
-          <Paragraph>Hey, I&apos;m <Bold>Zhang Chen. </Bold> I&apos;m currently studying
+          <Paragraph>Hey, I&apos;m <Bold>Chen Zhang. </Bold> I&apos;m currently studying
             at <UrlLink
               url={"https://sw.scu.edu.cn/"}>CSE</UrlLink> of <UrlLink
                 url={"https://www.scu.edu.cn/index.htm"}>Sichuan University</UrlLink> for my B.S.
