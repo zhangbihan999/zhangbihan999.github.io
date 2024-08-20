@@ -38,6 +38,8 @@ export default function Home() {
                 <Separator /> */}
             <UrlLink url={'#work-experience'} native={true} underline={false} fontSize={'text-sm'}>Work Experience</UrlLink>
             <Separator />
+            <UrlLink url={'#projects'} native={true} underline={false} fontSize={'text-sm'}>Projects</UrlLink>
+            <Separator />
             <UrlLink url={'#blogs'} native={true} underline={false} fontSize={'text-sm'}>Blogs</UrlLink>
 
             {/* <UrlLink url={'#honors-awards'} native={true} underline={false} fontSize={'text-sm'}>Honors & awards</UrlLink>
@@ -53,7 +55,7 @@ export default function Home() {
             at <UrlLink
               url={"https://sw.scu.edu.cn/"}>CSE</UrlLink> of <UrlLink
                 url={"https://www.scu.edu.cn/index.htm"}>Sichuan University</UrlLink> for my B.S.
-            I&apos;m interested in <Bold>AI System</Bold> and enjoying coding.</Paragraph>
+            I&apos;m interested in <Bold>AI4DB</Bold> and enjoying coding via Python / TypeScript / Next.js.</Paragraph>
 
           <br />
 
@@ -130,15 +132,38 @@ export default function Home() {
 
         <div className={'h-14'}></div>
 
+        <div id='projects'>
+          <div className={'text-2xl'}>Projects </div>
+          <br />
+          <br />
+          <List>
+            <ListItem
+              left={'July 2024'}
+              right={
+                <div>
+                  <text>Stream: A Steam-Like Game Recommendation Platform</text>
+                  <Separator/>
+                  <UrlLink url={'https://stream-game-app.vercel.app/'}>URL</UrlLink>
+                  <Separator/>
+                  <UrlLink url={'https://github.com/zhangbihan999/stream-game-app'}>Code</UrlLink>
+                  <Separator/>
+                  <UrlLink url={'https://www.youtube.com/watch?v=IxnQsugQXB4'}>Video</UrlLink>
+                </div>
+              }/>
+          </List>
+        </div>
+
+        <div className={'h-14'}></div>
+
         <div id={'blogs'}>
           <div className={'text-2xl'}>Blogs <text className={'text-base'}>(selected)</text></div>
           <br />
           <br />
           <List>
             <ListItem left={'Jan 2024'} right={<UrlLink url={'https://blog.csdn.net/m0_73615873/article/details/135943523?spm=1001.2014.3001.5501'}
-              bold={false}>mini版语言模型，逐行精讲</UrlLink>} />
+              bold={false}>mini 版语言模型，逐行精讲</UrlLink>} />
             <ListItem left={'Jan 2024'} right={<UrlLink url={'https://blog.csdn.net/m0_73615873/article/details/135905512?spm=1001.2014.3001.5502'}
-              bold={false}>为什么现在的LLM都是decoder-only架构?</UrlLink>} />
+              bold={false}>为什么现在的 LLM 都是 decoder-only 架构?</UrlLink>} />
           </List>
         </div>
 
