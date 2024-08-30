@@ -55,7 +55,7 @@ export default function Home() {
             at <UrlLink
               url={"https://sw.scu.edu.cn/"}>CSE</UrlLink> of <UrlLink
                 url={"https://www.scu.edu.cn/index.htm"}>Sichuan University</UrlLink> for my B.S.
-            I&apos;m interested in <Bold>AI4DB</Bold> and enjoying coding via Python / TypeScript / Next.js.</Paragraph>
+            I&apos;m interested in <Bold>AI4DB</Bold> and enjoying coding via Python / TypeScript / Java / C++.</Paragraph>
 
           <br />
 
