@@ -55,7 +55,7 @@ export default function Home() {
             at <UrlLink
               url={"https://sw.scu.edu.cn/"}>CSE</UrlLink> of <UrlLink
                 url={"https://www.scu.edu.cn/index.htm"}>Sichuan University</UrlLink> for my B.S.
-            I&apos;m interested in <Bold>AI4DB</Bold> and enjoying coding via Python / TypeScript / Java / C++.</Paragraph>
+            I&apos;m interested in <Bold>Software Development</Bold> and enjoying coding via Python / TypeScript / Java.</Paragraph>
 
           <br />
 
@@ -124,7 +124,7 @@ export default function Home() {
                     <UrlLink url={'https://merlintang.github.io/'} bold={false}>Prof.Mingjie Tang</UrlLink>,&nbsp;Chengdu (China)
                   </div>
                   <br />
-                  2023.11 ~ now
+                  2023.11 ~ 2024.12
                 </div>
               } />
           </Table>
