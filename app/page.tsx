@@ -160,6 +160,8 @@ export default function Home() {
           <br />
           <br />
           <List>
+            <ListItem left={'Jan 2025'} right={<UrlLink url={'https://blog.csdn.net/m0_73615873/article/details/144996936?spm=1001.2014.3001.5502'}
+              bold={false}>Django 网页开发快速上手——实现一个博客应用</UrlLink>} />
             <ListItem left={'Jan 2024'} right={<UrlLink url={'https://blog.csdn.net/m0_73615873/article/details/135943523?spm=1001.2014.3001.5501'}
               bold={false}>mini 版语言模型，逐行精讲</UrlLink>} />
             <ListItem left={'Jan 2024'} right={<UrlLink url={'https://blog.csdn.net/m0_73615873/article/details/135905512?spm=1001.2014.3001.5502'}
